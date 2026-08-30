@@ -28379,15 +28379,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "manifest_vendor.xiaomi.hardware.aidl.tidaservice.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.aidl.tidaservice.xml",
@@ -32631,37 +32622,6 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "libmisight",
                 "libmlipay",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "mtd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/mtd",
-            ],
-            shared_libs: [
-                "libmt",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libselinux",
-                "libbinder_ndk",
-                "vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",

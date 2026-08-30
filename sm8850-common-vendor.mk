@@ -11,7 +11,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/nfc2-service-nxp.rc:$(TARGET_COPY_OUT_ODM)/etc/init/nfc2-service-nxp.rc \
-    vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-service.rc \
@@ -1639,7 +1638,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
     fod-aidl.xml \
-    manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
     manifest_vendor.xiaomi.hardware.aidl.tidaservice.xml \
     manifest_vendor.xiaomi.hardware.mfidoca.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
@@ -1790,7 +1788,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
     mlipayd \
-    mtd \
     tidad
 
 PRODUCT_PACKAGES += \
