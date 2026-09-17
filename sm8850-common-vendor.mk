@@ -11,8 +11,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/nfc2-service-nxp.rc:$(TARGET_COPY_OUT_ODM)/etc/init/nfc2-service-nxp.rc \
-    vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc \
-    vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
@@ -120,8 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/1-SN1X0_SPC.txt:$(TARGET_COPY_OUT_VENDOR)/etc/1-SN1X0_SPC.txt \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/IPACM_Filter_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_Filter_cfg.xml \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/acdbdata/alor_cdp/CDP_alor_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_cdp/CDP_alor_acdb_cal.acdb \
@@ -286,6 +282,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/hal_uuid_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_config.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
@@ -317,7 +314,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.qt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qt-service.rc \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
@@ -326,8 +322,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/libxiaomi_qcril.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/libxiaomi_qcril.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lowi-server.rc \
@@ -360,10 +354,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.c2pa-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.c2pa-aidl-service-qti.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
@@ -597,14 +589,13 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     hotword_plugin \
     android.hardware.bluetooth.audio-impl-qti \
-    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio_sw \
     android.hardware.bluetooth.lmp_event-impl-qti \
     android.hardware.bluetooth.ranging@aidl-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    audio.bluetooth_qti.default \
     libEseUtils \
     libaudiocorehal.default \
     libaudiocorehal.qti \
@@ -619,8 +610,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth.btavsprovider-impl-qti \
     vendor.qti.hardware.bluetooth.finder-impl-qti \
     vendor.qti.hardware.bluetooth.xpanprovider-impl-qti \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore-impl \
@@ -703,9 +692,6 @@ PRODUCT_PACKAGES += \
     libVirtClientInterface \
     libVoiceSdk \
     libWlanServiceJni \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_bt_lhdc \
     lib_bt_mihc \
     lib_lvacfs \
@@ -716,9 +702,6 @@ PRODUCT_PACKAGES += \
     libadsp_default_listener \
     libadsprpc \
     libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
     libagmclient \
     libagmipcservice \
     libagmmixer \
@@ -768,7 +751,6 @@ PRODUCT_PACKAGES += \
     libcodec2_store_dolby \
     libconfigdb \
     libcpion \
-    libcppcose_rkp-sm8850 \
     libdapparamstorage \
     libdataitems \
     libdeccfg \
@@ -857,7 +839,6 @@ PRODUCT_PACKAGES += \
     libhistogram \
     libidl \
     libintervmipc \
-    libipanat \
     libizat_client_api \
     libizat_core \
     libjnihelper \
@@ -866,9 +847,6 @@ PRODUCT_PACKAGES += \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
-    libkeymint-sm8850 \
-    libkeymint_remote_prov_support-sm8850 \
-    libkeymint_support-sm8850 \
     liblbs_core \
     liblearningmodule \
     liblistensoundmodel2vendor \
@@ -926,8 +904,6 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder_vendor \
     libmodem_device_ids \
     libnative-api \
-    libnetfilter_conntrack \
-    libnfnetlink \
     libnicm \
     libnicm_dsi \
     libnicm_interface \
@@ -943,15 +919,12 @@ PRODUCT_PACKAGES += \
     libnspextensionsuperresolutionservice \
     libnspframework \
     liboemcrypto \
-    liboffloadhal \
     liboffscreenpoweroptfeature \
     libops \
     libos \
     libpal_net_if \
     libpal_sounddose \
     libpalclient \
-    libpaleventnotifier \
-    libpalipcservice \
     libpasrutils \
     libpdmapper \
     libpdnotifier \
@@ -1117,7 +1090,6 @@ PRODUCT_PACKAGES += \
     libsn300u_fw \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
-    libsndcardparser \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_dynamic_loader_stub \
@@ -1281,7 +1253,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-service \
     vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
     vendor.qti.hardware.ListenSoundModelAidl-V2-ndk \
-    vendor.qti.hardware.agm-V1-ndk \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.bluetooth.btavsprovider-V1-ndk \
     vendor.qti.hardware.bluetooth.xpanprovider-V1-ndk \
@@ -1314,7 +1285,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.hexlp-V2-ndk \
     vendor.qti.hardware.minkipcbinder-V1-ndk \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.pal-V1-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.power.powermodule-V1-ndk \
     vendor.qti.hardware.qasr-V3-ndk \
@@ -1378,12 +1348,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk \
-    vendor.xiaomi.hardware.aidl.tidaservice-V1-ndk \
     vendor.xiaomi.hardware.blackbox-V1-ndk \
     vendor.xiaomi.hardware.display.mihwcextension-V2-ndk \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
-    vendor.xiaomi.hardware.mfidoca-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
     vendor.xiaomi.hardware.radio-V1-ndk \
     vendor.xiaomi.hardware.radio.cdc-V1-ndk \
@@ -1456,7 +1424,6 @@ PRODUCT_PACKAGES += \
     libflatmode \
     libfpsmonitor \
     libhistprocess \
-    libmfido \
     libmi-stc-HW-modulate \
     libmiBrightness \
     libmiClstc \
@@ -1465,14 +1432,12 @@ PRODUCT_PACKAGES += \
     libmi_dspp \
     libmieventnodewatch \
     libmlipay \
-    libmt \
     libpaperMode \
     librhytheyecare \
     libsdr2hdr \
     libsre \
     libtensorflowlite_touch_c \
     libtfacal \
-    libtida \
     libtruetone \
     libvideomode \
     libwindns \
@@ -1558,7 +1523,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-service-qti.xml \
     android.hardware.security.sharedsecret-service-qti.xml \
     atfwd-saidl.xml \
-    audioeffectservice_qti.xml \
     bcs-ranging.xml \
     bluetooth-finder.xml \
     bluetooth_hci.xml \
@@ -1574,8 +1538,8 @@ PRODUCT_PACKAGES += \
     dms-service.xml \
     dpm-saidl.xml \
     dumpstate-xiaomi.xml \
+    fm_hci.xml \
     imsdcservice-saidl.xml \
-    manifest_audiocorehal_default.xml \
     manifest_btaudiocoreservices_qti.xml \
     mapper.qti.xml \
     mwqem-saidl.xml \
@@ -1595,13 +1559,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.alarm.xml \
+    vendor.qti.hardware.bluetooth.btavsprovider.xml \
+    vendor.qti.hardware.bluetooth.xpanprovider.xml \
     vendor.qti.hardware.c2pa-aidl-service.xml \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
-    vendor.qti.hardware.display.allocator-service.xml \
     vendor.qti.hardware.display.composer-service3_v4.xml \
-    vendor.qti.hardware.display.demura-service.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.embmssl.xml \
     vendor.qti.hardware.hexlp-service.xml \
@@ -1620,7 +1584,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
-    vendor.qti.hardware.tetheroffload.service.xml \
     vendor.qti.hardware.trustedui-aidl-service.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
@@ -1636,10 +1599,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.dynamiccameraserver.xml \
     vendor.xiaomi.hardware.postprocservice-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
+    vendor.xiaomi.hardware.radio.cdc.xml \
+    vendor.xiaomi.hardware.radio.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
     fod-aidl.xml \
-    manifest_vendor.xiaomi.hardware.aidl.tidaservice.xml \
-    manifest_vendor.xiaomi.hardware.mfidoca.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     misensor_camera.xml \
     nfc2-service-nxp.xml \
@@ -1681,10 +1644,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.c2pa-aidl-service-qti \
     vendor.qti.hardware.capabilityconfigstore-service \
-    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.minkipcbinder@1.0-service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.secureprocessor \
@@ -1714,14 +1675,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors \
     init.qcom \
     init.qcrild \
-    init.qti.display_boot \
     init.qti.kernel \
     init.qti.keymaster \
     init.qti.media \
     init.qti.qcv \
     init.qti.write \
-    ipacm \
-    ipacm-diag \
     irsc_util \
     ks \
     loadalgo \
@@ -1783,17 +1741,23 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     qccsyshal_aidl-service \
     wfdservice64 \
-    fidoca \
     android.hardware.nqnfc-service.nxp \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
-    mlipayd \
-    tidad
+    mlipayd
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
+    vendor_etc_hal_uuid_map_pudding_xml \
+    vendor_etc_hal_uuid_map_pandora_xml \
+    vendor_etc_hal_uuid_map_popsicle_xml \
+    vendor_etc_hal_uuid_map_nezha_xml \
+    vendor_etc_hal_uuid_map_myron_xml \
+    vendor_etc_hal_uuid_map_byron_xml \
+    vendor_etc_hal_uuid_map_athens_xml \
+    vendor_etc_hal_uuid_map_songyuan_xml \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so \
