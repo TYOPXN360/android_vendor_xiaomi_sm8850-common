@@ -1,0 +1,11 @@
+<!--
+    Input:
+        hardware/qcom-caf/sm8850/audio/pal/ipc/aidl/palnotifierserver/Manifest_IPALEventNotifier.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.qti.hardware.paleventnotifier</name>
+        <version>3</version>
+        <fqname>IPALEventNotifier/default</fqname>
+    </hal>
+</manifest>

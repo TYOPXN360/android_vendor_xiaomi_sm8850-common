@@ -1,0 +1,35 @@
+/**
+ * @file hexlpservice_boot_config.json
+ *
+ * @cr
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * All rights reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * @brief
+ * This file contains the boot configuration for the signed Hexlp service.
+ *
+ */
+
+{
+    "unsupported_chip_families":["CHIPINFO_FAMILY_MOLOKAI", "CHIPINFO_FAMILY_HAWI"],
+    "unsupported_chips":["CHIPINFO_ID_SGP_KAANAPALI"],
+    "default_configs":
+    {
+        "service_infos":
+        {
+            "infos":
+            {
+            },
+            "usecase_infos":
+            {
+            }
+        }
+    },
+    "chip_family_configs":
+    {
+    },
+    "chip_configs":
+    {
+    }
+}
