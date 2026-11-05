@@ -1355,7 +1355,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
     vendor.xiaomi.hardware.radio-V1-ndk \
     vendor.xiaomi.hardware.radio.cdc-V1-ndk \
-    vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
