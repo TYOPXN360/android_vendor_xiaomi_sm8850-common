@@ -273,10 +273,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630946473896859282.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946473896859282.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630946850534658451.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946850534658451.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630946916234099603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630947039571902866.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902866.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
