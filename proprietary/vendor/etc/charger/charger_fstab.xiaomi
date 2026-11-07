@@ -1,0 +1,3 @@
+# Android fstab file for charger mode
+#<dev>                         <mnt_point>         <type>     <mnt_flags options>                 <fs_mgr_flags>
+/dev/block/by-name/persist   /mnt/vendor/persist    ext4    noatime,nosuid,nodev,barrier=1    wait,check

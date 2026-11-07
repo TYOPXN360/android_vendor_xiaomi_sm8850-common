@@ -311,6 +311,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.micharge-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.micharge-service \
     vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.micharge-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.micharge-V2-ndk.so \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge-service.rc \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.batteryantiaging-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.batteryantiaging-service \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/charger/charger_fstab.xiaomi:$(TARGET_COPY_OUT_VENDOR)/etc/charger/charger_fstab.xiaomi \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libbaa_BasedOnCC_VolDown.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbaa_BasedOnCC_VolDown.so \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libbaa_ChargeInfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbaa_ChargeInfo.so \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libbaa_ChargerModeProtect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbaa_ChargerModeProtect.so \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libbaa_FreqChgFvDown.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbaa_FreqChgFvDown.so \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libbaa_LowSohFvDown.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbaa_LowSohFvDown.so \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libbaa_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbaa_common.so \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.batteryantiaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.batteryantiaging-V1-ndk.so \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
