@@ -46,6 +46,13 @@ service memory-post-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot-memory
     disabled
     oneshot
 
+service start-subsys /vendor/bin/sh /vendor/bin/start_subsys.sh
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
 on early-init
     # Set the console loglevel to < KERN_WARN
     # Set the default message loglevel to KERN_INFO
@@ -88,6 +95,14 @@ on post-fs
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
     write /sys/block/dm-2/queue/read_ahead_kb 2048
+
+on post-fs-data && property:vendor.all.modules.ready=1
+    # Late attach SOCCP and start ADSP and CDSP
+    start start-subsys
+
+on property:vendor.all.modules.ready=1
+    # Late attach SOCCP and start ADSP and CDSP
+    start start-subsys
 
 on early-boot
     # Allow subsystem (modem etc) debugging
@@ -195,6 +210,9 @@ on property:sys.boot_completed=1
 
 on property:vendor.pasr.enabled=false
     stop pasr-hal
+
+on init && property:ro.boot.mode=charger
+    start start-subsys
 
 on charger
     start kernel-post-boot
