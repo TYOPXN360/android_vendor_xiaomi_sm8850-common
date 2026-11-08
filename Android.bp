@@ -14665,10 +14665,130 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libsdmclient",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdmclient.so",
+            ],
+            shared_libs: [
+                "libhidltransport",
+                "libhidlbase",
+                "libbinder",
+                "libdfintf",
+                "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk",
+                "vendor.xiaomi.hardware.displayfeature@1.0",
+                "libBlAlgointf",
+                "libjsoncpp",
+                "libclient2slpi.notifier",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libsdmcore",
+                "libdisplaydebug",
+                "libsdmutils",
+                "libdrm",
+                "libtinyxml2-v36",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
 
+cc_prebuilt_library_shared {
+    name: "libsdmcore",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdmcore.so",
+            ],
+            shared_libs: [
+                "libhidltransport",
+                "libhidlbase",
+                "libbinder",
+                "libdfintf",
+                "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk",
+                "vendor.xiaomi.hardware.displayfeature@1.0",
+                "libBlAlgointf",
+                "libjsoncpp",
+                "libclient2slpi.notifier",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libdisplaydebug",
+                "libsdmutils",
+                "libdrm",
+                "libdrmutils",
+                "libsdedrm",
+                "libsdmdal",
+                "libmisight",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
 
-
-
+cc_prebuilt_library_shared {
+    name: "libsdmdal",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdmdal.so",
+            ],
+            shared_libs: [
+                "libhidltransport",
+                "libhidlbase",
+                "libbinder",
+                "libdfintf",
+                "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk",
+                "vendor.xiaomi.hardware.displayfeature@1.0",
+                "libBlAlgointf",
+                "libjsoncpp",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libdisplaydebug",
+                "libsdmutils",
+                "libdrm",
+                "libdrmutils",
+                "libsdedrm",
+                "libclient2slpi.notifier",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
 
 cc_prebuilt_library_shared {
     name: "libsdmextension",
@@ -25593,7 +25713,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libmiSensorCtrl",
                 "libmiXmlParser",
-                "libMiDispDevManager",
                 "libbase",
                 "android.frameworks.sensorservice-V1-ndk",
                 "android.hardware.sensors-V3-ndk",
