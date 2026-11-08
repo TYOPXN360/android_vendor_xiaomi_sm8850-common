@@ -280,6 +280,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630947039571902866.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902866.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
@@ -1328,6 +1330,27 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
+    libQnnDsp \
+    libQnnDspV66Skel \
+    libQnnDspV66Stub \
+    libQnnGpu \
+    libQnnHtp \
+    libQnnHtpPrepare \
+    libQnnHtpV68Skel \
+    libQnnHtpV68Stub \
+    libQnnHtpV69Skel \
+    libQnnHtpV69Stub \
+    libQnnHtpV73Skel \
+    libQnnHtpV73Stub \
+    libQnnHtpV75Skel \
+    libQnnHtpV75Stub \
+    libQnnHtpV79Skel \
+    libQnnHtpV79Stub \
+    libQnnHtpV81Skel \
+    libQnnHtpV81Stub \
+    libQnnSystem \
+    libQnnTFLiteDelegate \
+    libqnn_delegate_jni \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.diaghal-V1-ndk \
@@ -1367,7 +1390,6 @@ PRODUCT_PACKAGES += \
     libQnnHtpV81CalculatorStub \
     libQnnJsonProfilingReader \
     libQnnModelDlc \
-    libQnnSystem \
     libadaptivehdr \
     libbarrage \
     libclient2slpi.notifier \
@@ -1416,6 +1438,8 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     ImsDataChannelService \
     QCC \
+    atfwd \
+    imssettings \
     QtiTelephony \
     WfdService \
     ims \
