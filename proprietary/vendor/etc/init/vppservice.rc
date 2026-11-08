@@ -13,9 +13,8 @@ service vendor.vppservice /vendor/bin/vppservice
     # don't auto restart
     oneshot
 
-    # Start only when explicitly requested; this device's current DSP blob
-    # crashes during boot-time VPP initialization.
-    disabled
+    # start only when requested (uncomment below to disable service at boot)
+    # disabled
 
     # write pid to file for VideoRecovery
     writepid /data/vendor/video/vppservicePid

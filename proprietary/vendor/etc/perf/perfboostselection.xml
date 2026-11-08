@@ -57,8 +57,8 @@
         <!-- Type="1", main launch boost of 0.6sec -->
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="600" Target="canoe" Temp="25000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x3f, 0X42804000, 11, 0x5FC40000, 1,
@@ -69,8 +69,8 @@
 
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="600" Target="canoe" Temp="40000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x3f, 0X42804000, 11, 0x5FC40000, 1,
@@ -81,8 +81,8 @@
 
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="600" Target="canoe" Temp="44000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1996800, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x3f, 0X42804000, 11, 0x5FC40000, 1,
@@ -93,8 +93,8 @@
 
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="600" Target="canoe" Temp="48000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1552000, 0x4080C200, 1497600,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x3f, 0X42804000, 11, 0x5FC40000, 1,
@@ -102,6 +102,65 @@
                        0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
                        0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647, 0x5FCC0000, 0"/>
+
+    <!-- LL Lite Base boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- LLCCBW resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
+        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
+        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS resource opcode for gold, values-->
+        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS resource opcode for prime, values -->
+        <!-- Type="1", main launch of 1sec -->
+        <Config
+            Id="0x00001081" Type="1" Enable="true" Timeout="1000" Target="alor" Temp="25000"
+            Resources="0x40C00000, 0x5, 0x43488000, 0x383E70,
+                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x4080C000, 2476800, 0x4080C200, 2688000,
+                       0x40808000, 1747200, 0x40808200, 1651200,
+                       0x40814000, 1401600, 0x40814200, 1248000,
+                       0x42C10000, 0x1, 0x4303C000, 0xC3500, 0x41844000, 0xE3C88, 0X42804000, 11,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x63C5C000, 2, 0, 2918000,
+                       0x63C5C200, 2, 0, 3072000" />
+
+        <Config
+            Id="0x00001081" Type="1" Enable="true" Timeout="1000" Target="alor" Temp="40000"
+            Resources="0x40C00000, 0x5, 0x43488000, 0x383E70,
+                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x4080C000, 2476800, 0x4080C200, 2688000,
+                       0x40808000, 1747200, 0x40808200, 1651200,
+                       0x40814000, 1401600, 0x40814200, 1248000,
+                       0x42C10000, 0x1, 0x4303C000, 0xC3500, 0x41844000, 0xE3C88, 0X42804000, 11,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x63C5C000, 2, 0, 2918000,
+                       0x63C5C200, 2, 0, 3072000" />
+
+        <Config
+            Id="0x00001081" Type="1" Enable="true" Timeout="1000" Target="alor" Temp="44000"
+            Resources="0x40C00000, 0x5, 0x43488000, 0x383E70,
+                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x4080C000, 2265600, 0x4080C200, 2688000,
+                       0x40808000, 1747200, 0x40808200, 1651200,
+                       0x40814000, 1401600, 0x40814200, 1248000,
+                       0x42C10000, 0x1, 0x4303C000, 0xC3500, 0x41844000, 0xE3C88,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x63C5C000, 2, 0, 2918000,
+                       0x63C5C200, 2, 0, 3072000" />
+
+        <Config
+            Id="0x00001081" Type="1" Enable="true" Timeout="1000" Target="alor" Temp="48000"
+            Resources="0x40C00000, 0x5, 0x43488000, 0x383E70,
+                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x4080C000, 1555200, 0x4080C200, 1497600,
+                       0x40808000, 1747200, 0x40808200, 1651200,
+                       0x40814000, 1401600, 0x40814200, 1248000,
+                       0x42C10000, 0x1, 0x4303C000, 0xC3500, 0x41844000, 0xE3C88,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x63C5C000, 2, 0, 2918000,
+                       0x63C5C200, 2, 0, 3072000" />
 
     <!-- Lightening_Launches_Lite App Launch (default) boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -123,6 +182,7 @@
         <!-- MPCTLV3_XIAOMI_SG_CFS_BOOST, value-->
         <!-- MPCTLV3_SCHED_MIGT_EXCLUSIVE_ENABLE -->
         <!-- STORAGE_BOOST_MAX_THRESHOLD resource opcode, value-->
+        <!-- STORAGE_BOOST_MIN_THRESHOLD resource opcode, value-->
 
         <!-- Type="2", Main App Launch Boost -->
         <Config
@@ -130,37 +190,89 @@
             Resources="0x40C00000, 0x5,
                       0x40C74000, 0xFF, 0x40408000, 0x10,
                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x40808000, 1113600, 0x40808200, 1017600, 0x4080C000, 1785600, 0x4080C200, 1862400, 0x42C10000, 0x1,
+                      0x40808000, 787200, 0x40808200, 883200, 0x4080C000, 1555200, 0x4080C200, 1497600, 0x42C10000, 0x1,
                       0x42834000, 1, 0x4100C000, 0x3,
-                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0x400"/>
+                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
+
 
         <Config
             Id="0x00001081" Type="2" Enable="true" Timeout="2000" Target="canoe" Temp="40000"
             Resources="0x40C00000, 0x5,
                       0x40C74000, 0xFF, 0x40408000, 0x10,
                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x40808000, 1113600, 0x40808200, 1017600, 0x4080C000, 1785600, 0x4080C200, 1862400, 0x42C10000, 0x1,
+                      0x40808000, 787200, 0x40808200, 883200, 0x4080C000, 1555200, 0x4080C200, 1497600, 0x42C10000, 0x1,
                       0x42834000, 1, 0x4100C000, 0x3,
-                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0x400"/>
+                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
 
         <Config
             Id="0x00001081" Type="2" Enable="true" Timeout="2000" Target="canoe" Temp="44000"
             Resources="0x40C00000, 0x5,
                       0x40C74000, 0xFF, 0x40408000, 0x10,
                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x40808000, 1113600, 0x40808200, 1017600, 0x4080C000, 1785600, 0x4080C200, 1862400, 0x42C10000, 0x1,
+                      0x40808000, 787200, 0x40808200, 883200, 0x4080C000, 1555200, 0x4080C200, 1497600, 0x42C10000, 0x1,
                       0x42834000, 1, 0x4100C000, 0x3,
-                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0x400"/>
+                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
 
         <Config
             Id="0x00001081" Type="2" Enable="true" Timeout="2000" Target="canoe" Temp="48000"
             Resources="0x40C00000, 0x5,
                       0x40C74000, 0xFF, 0x40408000, 0x10,
                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x40808000, 1113600, 0x40808200, 1017600,
-                      0x4080C000, 1552000, 0x4080C200, 1497600, 0x42C10000, 0x1,
+                      0x40808000, 787200, 0x40808200, 883200,
+                      0x4080C000, 1555200, 0x4080C200, 1497600, 0x42C10000, 0x1,
                       0x42834000, 1, 0x4100C000, 0x3,
-                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0x400"/>
+                      0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
+
+    <!-- Lightning Launches Lite App Launch boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
+        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
+        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
+        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
+        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
+        <!-- Type="2", Main App launch Boost : Duration governed by LAL -->
+        <Config
+             Id="0x00001081" Type="2" Enable="true" Timeout="15000" Target="alor" Temp="25000"
+             Resources="0x40C00000, 0x5, 0x40408000, 0x10 , 0x43488000, 0x14A528,
+                        0x40C74000, 0, 0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028,
+                        0x4080C000, 2476800, 0x4080C200, 2688000,
+                        0x40808000, 1900800, 0x40808200, 1651200, 0x40814000, 1401600, 0x40814200, 1248000,
+                        0x4100C000, 0x3 , 0x42C10000, 0x1, 0x42834000, 1" />
+
+        <Config
+             Id="0x00001081" Type="2" Enable="true" Timeout="15000" Target="alor" Temp="40000"
+             Resources="0x40C00000, 0x5, 0x40408000, 0x10 , 0x43488000, 0x14A528,
+                        0x40C74000, 0, 0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028,
+                        0x4080C000, 2476800, 0x4080C200, 2688000,
+                        0x40808000, 1900800, 0x40808200, 1651200, 0x40814000, 1401600, 0x40814200, 1248000,
+                        0x4100C000, 0x3 , 0x42C10000, 0x1, 0x42834000, 1" />
+
+        <Config
+             Id="0x00001081" Type="2" Enable="true" Timeout="15000" Target="alor" Temp="44000"
+             Resources="0x40C00000, 0x5, 0x40408000, 0x10 , 0x43488000, 0x14A528,
+                        0x40C74000, 0, 0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028,
+                        0x4080C000, 2265600, 0x4080C200, 2688000,
+                        0x40808000, 1900800, 0x40808200, 1651200, 0x40814000, 1401600, 0x40814200, 1248000,
+                        0x4100C000, 0x3 , 0x42C10000, 0x1, 0x42834000, 1" />
+
+        <Config
+             Id="0x00001081" Type="2" Enable="true" Timeout="15000" Target="alor" Temp="48000"
+             Resources="0x40C00000, 0x5, 0x40408000, 0x10 , 0x43488000, 0x14A528,
+                        0x40C74000, 0, 0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028,
+                        0x4080C000, 1555200, 0x4080C200, 1497600,
+                        0x40808000, 1900800, 0x40808200, 1651200, 0x40814000, 1401600, 0x40814200, 1248000,
+                        0x4100C000, 0x3 , 0x42C10000, 0x1, 0x42834000, 1" />
 
     <!-- fast launch Base (default) boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -187,8 +299,8 @@
         <!-- Type="105", fast launch boost of 2sec -->
         <Config
             Id="0x00001081" Type="105" Enable="true" Timeout="2000" Target="canoe" Temp="35000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0X42804000, 9, 0x5FC40000, 1,
@@ -232,6 +344,35 @@
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
                        0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647"/>
 
+    <!-- Lightning Launches Lite Game Launch boost -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SLB_BIG, val-->
+        <!-- SLB_PRIME, val-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
+        <!-- CPU_DOWN_FREQ_THRESHOLD_US BIG, val us -->
+        <!-- CPU_DOWN_FREQ_THRESHOLD_US PRIME, val us -->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
+        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
+        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
+        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- Type="3", Main Game Launch Boost : Duration governed by LGL -->
+        <Config
+            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="alor"
+            Resources="0x40C00000, 0x1, 0x40C68000, 60,
+                       0x40C68200, 60, 0x4080C000, 3033600, 0x4080C200, 2841600,
+                       0x40808000, 1747200, 0x40808200, 1497600,
+                       0x40814000, 1401600, 0x40814200, 1017600, 0x41448000, 20000,
+                       0x41448200, 20000, 0x40C74000, 0xFC , 0x40408000, 0x63,
+                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x42C10000, 0x1" />
+
     <!--Activity lauch boost-->
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
@@ -255,8 +396,8 @@
         <!-- Type="10", main launch boost of 0.6sec -->
         <Config
             Id="0x00001081" Type="10" Enable="true" Timeout="600" Target="canoe" Temp="25000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970,
                        0x42C10000, 0x1, 0x43488000, 0x14A528,
                        0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0, 0x5FC00000, 0x3f,
@@ -267,8 +408,8 @@
 
         <Config
             Id="0x00001081" Type="10" Enable="true" Timeout="600" Target="canoe" Temp="40000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970,
                        0x42C10000, 0x1, 0x43488000, 0x14A528,
                        0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0, 0x5FC00000, 0x3f,
@@ -279,8 +420,8 @@
 
         <Config
             Id="0x00001081" Type="10" Enable="true" Timeout="600" Target="canoe" Temp="44000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1996800, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970,
                        0x42C10000, 0x1, 0x43488000, 0x14A528,
                        0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0, 0x5FC00000, 0x3f,
@@ -291,8 +432,8 @@
 
         <Config
             Id="0x00001081" Type="10" Enable="true" Timeout="600" Target="canoe" Temp="48000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1552000, 0x4080C200, 1497600,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970,
                        0x42C10000, 0x1, 0x43488000, 0x14A528,
                        0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0, 0x5FC00000, 0x3f,
@@ -300,6 +441,63 @@
                        0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
                        0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647, 0x5FCC0000, 0"/>
+
+    <!--Activity launch boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+        <!-- CPU_LLCC_BW_MIN_FREQ_V2 resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
+        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
+        <!-- SCHED_TASK_BOOST resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
+        <!-- STORAGE_BOOST_MIN_THRESHOLD resource opcode, value-->
+        <!-- Type="10", main launch boost of 2sec -->
+        <Config
+            Id="0x00001081" Type="10" Enable="true" Timeout="2000" Target="alor" Temp="25000"
+            Resources="0x40C00000, 0x5,
+                       0x41848000, 0xE3C88, 0x41844000, 0xE3C88,
+                       0x42C10000, 0x1, 0x43488000, 0x383E70,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0 ,
+                       0x4080C000, 2476800, 0x4080C200, 2688000,
+                       0x40808000, 1747200, 0x40808200, 1862400,
+                       0x40814000, 1401600, 0x40814200, 1497600, 0x42C50000, 0x3FF" />
+
+        <Config
+            Id="0x00001081" Type="10" Enable="true" Timeout="2000" Target="alor" Temp="40000"
+            Resources="0x40C00000, 0x5,
+                       0x41848000, 0xE3C88, 0x41844000, 0xE3C88,
+                       0x42C10000, 0x1, 0x43488000, 0x383E70,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0 ,
+                       0x4080C000, 2476800, 0x4080C200, 2688000,
+                       0x40808000, 1747200, 0x40808200, 1862400,
+                       0x40814000, 1401600, 0x40814200, 1497600, 0x42C50000, 0x3FF" />
+
+        <Config
+            Id="0x00001081" Type="10" Enable="true" Timeout="2000" Target="alor" Temp="44000"
+            Resources="0x40C00000, 0x5,
+                       0x41848000, 0xE3C88, 0x41844000, 0xE3C88,
+                       0x42C10000, 0x1, 0x43488000, 0x383E70,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0 ,
+                       0x4080C000, 2265600, 0x4080C200, 2688000,
+                       0x40808000, 1747200, 0x40808200, 1862400,
+                       0x40814000, 1401600, 0x40814200, 1497600, 0x42C50000, 0x3FF" />
+
+        <Config
+            Id="0x00001081" Type="10" Enable="true" Timeout="2000" Target="alor" Temp="48000"
+            Resources="0x40C00000, 0x5,
+                       0x41848000, 0xE3C88, 0x41844000, 0xE3C88,
+                       0x42C10000, 0x1, 0x43488000, 0x383E70,
+                       0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0 ,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
+                       0x40808000, 1747200, 0x40808200, 1862400,
+                       0x40814000, 1401600, 0x40814200, 1497600, 0x42C50000, 0x3FF" />
 
      <!--Camera Launch -->
         <!-- MPCTLV3_ALWAYS_ALLOW_OPCODE, 0x1 -->
@@ -328,8 +526,8 @@
         <!-- MPCTLV3_SCHED_MIGT_EXCLUSIVE_ENABLE -->
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="canoe" Temp="25000"
-            Resources="0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000, 0x5FC00000, 0x3f,
+            Resources="0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600, 0x5FC00000, 0x3f,
                        0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
                        0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
@@ -337,8 +535,8 @@
 
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="canoe" Temp="40000"
-            Resources="0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000, 0x5FC00000, 0x3f,
+            Resources="0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600, 0x5FC00000, 0x3f,
                        0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
                        0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
@@ -346,8 +544,8 @@
 
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="canoe" Temp="44000"
-            Resources="0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1996800, 0x4080C200, 2112000, 0x5FC00000, 0x3f,
+            Resources="0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600, 0x5FC00000, 0x3f,
                        0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
                        0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
@@ -355,12 +553,57 @@
 
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="canoe" Temp="48000"
-            Resources="0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1552000, 0x4080C200, 1497600, 0x5FC00000, 0x3f,
+            Resources="0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600, 0x5FC00000, 0x3f,
                        0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
                        0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
                        0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647, 0x5FCC0000, 0"/>
+
+    <!--Animation boost -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
+        <!-- SCHED_LEGACY_FREQ_LEVELS BIG Core resource opcode, value-->
+        <!-- SCHED_LEGACY_FREQ_LEVELS PRIME Core resource opcode, value-->
+        <!-- SCHED_IPC_LEVELS BIG Core resource opcode, value-->
+        <!-- SCHED_IPC_LEVELS PRIME Core resource opcode, value-->
+        <Config
+            Id="0x00001083" Enable="true" Timeout="400" Target="alor" Temp="25000"
+            Resources="0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2265600, 0x4080C200, 2227200,
+                       0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
+                       0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
+                       0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
+                       0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647" />
+
+        <Config
+            Id="0x00001083" Enable="true" Timeout="400" Target="alor" Temp="40000"
+            Resources="0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2265600, 0x4080C200, 2227200,
+                       0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
+                       0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
+                       0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
+                       0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647" />
+
+        <Config
+            Id="0x00001083" Enable="true" Timeout="400" Target="alor" Temp="44000"
+            Resources="0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2016000, 0x4080C200, 2227200,
+                       0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
+                       0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
+                       0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
+                       0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647" />
+
+        <Config
+            Id="0x00001083" Enable="true" Timeout="400" Target="alor" Temp="48000"
+            Resources="0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
+                       0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
+                       0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
+                       0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
+                       0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647" />
 
 
     <!-- Silky_Scrolls_Lite: Scroll Boost (Heavy)-->
@@ -666,7 +909,8 @@
                 Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
                            0x40800000, 1113, 0x40800200, 1017,
                            0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A, 0x5FC00000, 0x3f,
-                           0x6081C000, 2, 2611200, 80, 0x5FCC0000, 0"
+                           0x6081C000, 2, 2611200, 80, 0x5FCC0000, 0,
+                           0X42858000, 1, 0X4284C000, 120"
                 Applist="com.miui.home"/>
         </Config>
 
@@ -755,15 +999,18 @@
         <!-- KSWAPD_AFFINITY resource opcode, value-->
         <!-- MPCTLV3_XIAOMI_SG_CFS_BOOST, value-->
         <!-- MPCTLV3_SCHED_MIGT_EXCLUSIVE_ENABLE -->
+        <!-- STORAGE_BOOST_MAX_THRESHOLD resource opcode, value-->
+        <!-- STORAGE_BOOST_MIN_THRESHOLD resource opcode, value-->
 
         <Config
             Id="0x00001082" Type="1" Enable="true" Timeout="800" Target="canoe" Temp="25000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0">
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff">
             <Selection
                 Resources="" Applist="com.android.camera"/>
             <Selection
@@ -778,12 +1025,13 @@
         </Config>
         <Config
             Id="0x00001082" Type="1" Enable="true" Timeout="800" Target="canoe" Temp="40000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0">
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff">
             <Selection
                 Resources="" Applist="com.android.camera"/>
             <Selection
@@ -799,12 +1047,13 @@
 
         <Config
             Id="0x00001082" Type="1" Enable="true" Timeout="800" Target="canoe" Temp="44000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1996800, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0">
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff">
             <Selection
                 Resources="" Applist="com.android.camera"/>
             <Selection
@@ -820,12 +1069,13 @@
 
         <Config
             Id="0x00001082" Type="1" Enable="true" Timeout="800" Target="canoe" Temp="48000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1552000, 0x4080C200, 1497600,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0">
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff">
             <Selection
                 Resources="" Applist="com.android.camera"/>
             <Selection
@@ -838,6 +1088,67 @@
                            0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0"
                 Applist="com.xiaomi.subscreencenter"/>
         </Config>
+
+    <!--App resume boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+        <!-- CPU_LLCC_BW_MIN_FREQ_V2 resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
+        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- GPU_POWER_LEVEL opcode, value-->
+        <!-- KSWAPD_AFFINITY resource opcode, value-->
+        <!-- MPCTLV3_XIAOMI_SG_CFS_BOOST, value-->
+        <!-- MPCTLV3_SCHED_MIGT_EXCLUSIVE_ENABLE -->
+        <!-- STORAGE_BOOST_MAX_THRESHOLD resource opcode, value-->
+        <!-- STORAGE_BOOST_MIN_THRESHOLD resource opcode, value-->
+
+        <Config
+            Id="0x00001082" Type="1" Enable="true" Timeout="400" Target="alor" Temp="25000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2265600, 0x4080C200, 2227200,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
+
+        <Config
+            Id="0x00001082" Type="1" Enable="true" Timeout="400" Target="alor" Temp="40000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2265600, 0x4080C200, 2227200,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
+
+        <Config
+            Id="0x00001082" Type="1" Enable="true" Timeout="400" Target="alor" Temp="44000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2016000, 0x4080C200, 2227200,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
+
+        <Config
+            Id="0x00001082" Type="1" Enable="true" Timeout="400" Target="alor" Temp="48000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
 
     <!--App resume boost in app-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -858,41 +1169,105 @@
         <!-- GPU_POWER_LEVEL opcode, value-->
         <!-- KSWAPD_AFFINITY resource opcode, value-->
         <!-- MPCTLV3_SCHED_MIGT_EXCLUSIVE_ENABLE -->
+        <!-- STORAGE_BOOST_MAX_THRESHOLD resource opcode, value-->
+        <!-- STORAGE_BOOST_MIN_THRESHOLD resource opcode, value-->
+
         <Config
             Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="canoe" Temp="25000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x5FC00000, 0x3f, 0x5FCC0000, 0"/>
+                       0x5FC00000, 0x3f, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
 
         <Config
             Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="canoe" Temp="40000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 2227200, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x5FC00000, 0x3f, 0x5FCC0000, 0"/>
+                       0x5FC00000, 0x3f, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
 
         <Config
             Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="canoe" Temp="44000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1996800, 0x4080C200, 2112000,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x5FC00000, 0x3f, 0x5FCC0000, 0"/>
+                       0x5FC00000, 0x3f, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
 
         <Config
             Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="canoe" Temp="48000"
-            Resources="0x40C00000, 0x1, 0x40808000, 1113600, 0x40808200, 1017600,
-                       0x4080C000, 1552000, 0x4080C200, 1497600,
+            Resources="0x40C00000, 0x1, 0x40808000, 787200, 0x40808200, 883200,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x5FC00000, 0x3f, 0x5FCC0000, 0"/>
+                       0x5FC00000, 0x3f, 0x5FCC0000, 0, 0x42C54000, 0xffffff, 0x42C50000, 0xfffff"/>
+
+    <!--App resume boost in app-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+        <!-- CPU_LLCC_BW_MIN_FREQ_V2 resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
+        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- GPU_POWER_LEVEL opcode, value-->
+        <!-- KSWAPD_AFFINITY resource opcode, value-->
+        <!-- MPCTLV3_XIAOMI_SG_CFS_BOOST, value-->
+        <!-- MPCTLV3_SCHED_MIGT_EXCLUSIVE_ENABLE -->
+        <!-- STORAGE_BOOST_MAX_THRESHOLD resource opcode, value-->
+        <!-- STORAGE_BOOST_MIN_THRESHOLD resource opcode, value-->
+        <Config
+            Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="alor" Temp="25000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2265600, 0x4080C200, 2227200,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
+
+        <Config
+            Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="alor" Temp="40000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2265600, 0x4080C200, 2227200,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
+
+        <Config
+            Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="alor" Temp="44000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 2016000, 0x4080C200, 2227200,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
+
+        <Config
+            Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="alor" Temp="48000"
+            Resources="0x40C00000, 0x1, 0x40808000, 1152000, 0x40808200, 1017600,
+                       0x4080C000, 1555200, 0x4080C200, 1497600,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x14A528, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0X42804000, 11, 0x5FC00000, 0x3f, 0x5FC40000, 1, 0x5FCC0000, 0,
+                       0x42C54000, 0xffffff, 0x42C50000, 0xfffff" />
+
     <!-- XIAOMI PERF MISC BOOST-->
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
@@ -973,8 +1348,101 @@
                 Resources="0x40C00000, 0x2, 0x40804000, 0xFFF, 0x40804200, 0xFFF,0x41000200, 1,
                            0x4080C000, 1000000, 0x4080C200, 1000000, 0x40808000, 600000, 0x40808200, 800000, 0x5FCC0000, 0"
                 Applist="tv.danmaku.bili,com.ss.android.ugc.aweme,com.autonavi.minimap,com.tencent.mm,com.smile.gifmaker,com.eg.android.AlipayGphone,
-                         com.sina.weibo,com.xingin.xhs,com.ss.android.article.news,com.sankuai.meituan,com.ss.android.ugc.aweme.lite"/>
+                         com.sina.weibo,com.xingin.xhs,com.ss.android.article.news,com.sankuai.meituan,com.ss.android.ugc.aweme.lite,com.tencent.map"/>
         </Config>
+
+        <!--Rotation latency boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <!-- MPCTLV3_XIAOMI_SG_RT_BOOST -->
+        <!-- SCHED_LEGACY_FREQ_LEVELS BIG Core resource opcode, value-->
+        <!-- SCHED_LEGACY_FREQ_LEVELS PRIME Core resource opcode, value-->
+        <!-- SCHED_IPC_LEVELS BIG Core resource opcode, value-->
+        <!-- SCHED_IPC_LEVELS PRIME Core resource opcode, value-->
+        <Config
+            Id="0x00001089" Enable="true" Timeout="1500" Target="canoe"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000, 0xCE6, 0x40800200, 0xFE6, 0x5FC44000, 21,
+                       0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
+                       0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
+                       0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
+                       0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647"/>
+
+        <!-- XIAOMI PERF MISC BOOST-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <!-- GPU_MIN_POWER_LEVEL opcode, value-->
+        <!-- GPU_MAX_POWER_LEVEL opcode, value-->
+        <!-- PULL DOWN STATUS BAR-->
+        <Config
+            Id="0x000011A0" Type="1" Enable="true" Timeout="500" Target="alor"
+            Resources="0x40C00000, 0x1, 0x40804000, 2745, 0x40804200, 4089,
+                       0x40800000, 1996, 0x40800200, 1689,
+                       0x42804000, 0x3, 0X42808000, 0x3" />
+
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <!-- GPU_MIN_POWER_LEVEL opcode, value-->
+        <!-- GPU_MAX_POWER_LEVEL opcode, value-->
+        <!-- UNLOCK SCREEN -->
+        <Config
+            Id="0x000011A0" Type="2" Enable="true" Timeout="500" Target="alor"
+            Resources="0x40C00000, 0x1, 0x40804000, 2745, 0x40804200, 4089,
+                       0x40800000, 1996, 0x40800200, 1689,
+                       0x42804000, 0x5, 0X42808000, 0x2" />
+
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ TITANIUM Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ TITANIUM Core resource opcode, value-->
+        <!-- GPU_MIN_POWER_LEVEL opcode, value-->
+        <!-- GPU_MAX_POWER_LEVEL opcode, value-->
+        <!-- LANDSCAPE TO RECNT TASK -->
+        <Config
+            Id="0x000011A0" Type="10" Enable="true" Timeout="500" Target="alor"
+            Resources="0x40C00000, 0x1, 0x40804000, 2745, 0x40804200, 4089,
+                       0x40800000, 2400, 0x40800200, 2246,
+                       0x42804000, 0x2, 0X42808000, 0x2" />
+
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ TITANIUM Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ TITANIUM Core resource opcode, value-->
+        <!-- GPU_MIN_POWER_LEVEL opcode, value-->
+        <!-- GPU_MAX_POWER_LEVEL opcode, value-->
+        <!-- GESTURE ANIMATION -->
+        <Config
+            Id="0x000011A0" Type="11" Enable="true" Timeout="500" Target="alor"
+            Resources="0x40C00000, 0x1, 0x40804000, 2745, 0x40804200, 4089,
+                       0x40800000, 1996, 0x40800200, 1689,
+                       0x42804000, 0x5, 0X42808000, 0x2" />
+
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <!-- FOLD STATE CHANGE-->
+        <Config
+            Id="0x000011A0" Type="20" Enable="true" Timeout="500" Target="alor"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000, 1555, 0x40800200, 1689" />
     </PerfBoost>
 </BoostConfigs>
 

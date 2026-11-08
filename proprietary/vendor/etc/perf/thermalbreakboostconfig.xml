@@ -232,13 +232,13 @@
     </PerfhintBreak>
 	<!--Process thermalbreak config-->
     <ProcessBreak>
-		<Config Process="mfp-daemon">
+		<Config Process="mfp-daemon" OpcodeToDisable="false">
             <Breakinfo Temperature="25000"
                 Target0="boost:1 cpu0:2611200 cpu6:4089600"
                 Target1="boost:1 cpu0:2611200 cpu6:4089600"
                 Target2="boost:1 cpu0:2438400 cpu6:3782400"/>
         </Config>
-		<Config Process="vendor.qti.camera.provider-service_64">
+		<Config Process="vendor.qti.camera.provider-service_64" OpcodeToDisable="true">
             <Breakinfo Temperature="25000"
                 Target0="boost:1 cpu0:3552000 cpu6:4089600"
                 Target1="boost:1 cpu0:3552000 cpu6:4089600"
@@ -248,7 +248,7 @@
                 Target1="boost:1 cpu0:1900000 cpu6:1977000"
                 Target2="boost:1 cpu0:1900000 cpu6:1977000"/>
         </Config>
-        <Config Process="com.android.camera">
+        <Config Process="com.android.camera" OpcodeToDisable="true">
             <Breakinfo Temperature="25000"
                 Target0="boost:1 cpu0:3552000 cpu6:4089600 cpumask:ff"
                 Target1="boost:1 cpu0:3552000 cpu6:4089600 cpumask:ff"

@@ -14,6 +14,17 @@
         <Workload Name="com.teslamotors.tesla" Target="alor_interposer,alor" Type="1" />
         <Workload Name="io.wallpaperengine.weclient" Target="alor_interposer,alor" Type="1" />
         <Workload Name="com.HoYoverse.hkrpgoversea" LE="13000" />
+	<Workload Name="com.tencent.docs" Type="1" />
+	<Workload Name="com.ss.android.ugc.aweme" Target="canoe,alor,alor_interposer" Type="5" />
+	<Workload Name="com.ss.android.ugc.live" Target="canoe,alor,alor_interposer" Type="5" />
+	<Workload Name="com.ss.android.ugc.aweme.lite" Target="canoe,alor,alor_interposer" Type="5" />
+        <Workload Name="com.tencent.mm" Target="canoe,alor,alor_interposer" Type="3" />
+        <Workload Name="com.ss.android.article.news" Target="canoe,alor,alor_interposer" Type="3" />
+        <Workload Name="com.sina.weibo" Target="canoe,alor,alor_interposer" Type="3" />
+        <Workload Name="com.smile.gifmaker" Target="canoe,alor" Type="5" />
+        <Workload Name="com.youku.phone" Target="canoe,alor" Type="5" />
+        <Workload Name="com.phoenix.read" Target="canoe,alor" Type="5" />
+        <Workload Name="com.tencent.tmgp.cf" Type="2" />
 
     </WLConfigResources>
 </WorkloadConfigs>

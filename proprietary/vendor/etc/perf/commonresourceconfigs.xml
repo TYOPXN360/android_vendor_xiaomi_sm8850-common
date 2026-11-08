@@ -40,6 +40,9 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x4" Node="/sys/module/lpm_levels/parameters/tmr_add" />
         <Minor OpcodeValue="0x5" Node="/sys/module/lpm_levels/parameters/lpm_ipi_prediction" Supported="no" />
         <Minor OpcodeValue="0x6" Node="/sys/devices/system/cpu/cpu%d/power/pm_qos_resume_latency_us" DispMode="6" />
+        <Minor OpcodeValue="0x7" Node="/sys/devices/system/cpu/qcom_lpm/parameters/premature_ext_disabled" Supported="no" />
+        <Minor OpcodeValue="0x8" Node="/sys/devices/system/cpu/qcom_lpm/parameters/resi_fact" Supported="no" />
+        <Minor OpcodeValue="0x9" Node="/sys/devices/system/cpu/qcom_lpm/parameters/optimized_resi" Supported="no" />
     <!-- power collapse major end -->
 
     <!-- cpufreq major start -->
@@ -288,6 +291,10 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x16" Node="/proc/sys/walt/sched_lrpb_active_ms" />
         <Minor OpcodeValue="0x17" Node="/sys/devices/platform/soc/soc:qcom,fdcvs/profile_index" />
         <Minor OpcodeValue="0x18" Node="/proc/sys/walt/sched_frame_rate" />
+        <Minor OpcodeValue="0x19" Node="/config/platform_mpam/noc_bw/cpu_cluster0/enable_monitor" Supported="no" />
+        <Minor OpcodeValue="0x1A" Node="/config/platform_mpam/noc_bw/gpu/enable_monitor" Supported="no" />
+        <Minor OpcodeValue="0x1B" Node="/sys/devices/platform/soc/1d83a400.qcom,cache-allocation/enable_monitor" Supported="no" />
+        <Minor OpcodeValue="0x1C" Node="/sys/devices/platform/soc/1d83a400.qcom,cache-allocation/bw_mon_ratio_thresh" Supported="no" />
     <!-- misc major end -->
 
     <!-- llcbw hwmon major start -->

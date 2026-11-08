@@ -28,6 +28,9 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x1" MinorValue="0x3" Supported="no" /> <!-- lpm_ref_stddev -->
         <Config MajorValue="0x1" MinorValue="0x4" Supported="no" /> <!-- lpm_tmr_add -->
         <Config MajorValue="0x1" MinorValue="0x2" Node="/proc/sys/walt/sched_busy_hyst_ns" />
+        <Config MajorValue="0x1" MinorValue="0x7" Node="/sys/devices/system/cpu/qcom_lpm/parameters/premature_ext_disabled" Supported="yes" Target="alor" />
+        <Config MajorValue="0x1" MinorValue="0x8" Node="/sys/devices/system/cpu/qcom_lpm/parameters/resi_fact" Supported="yes" Target="alor" />
+        <Config MajorValue="0x1" MinorValue="0x9" Node="/sys/devices/system/cpu/qcom_lpm/parameters/optimized_resi" Supported="yes" Target="alor" />
 
         <Config MajorValue="0x2" MinorValue="0x0" Node="/sys/kernel/msm_performance/parameters/cpu_min_freq" DispMode="6" /> <!-- cpu_min_freq -->
         <Config MajorValue="0x2" MinorValue="0x1" Node="/sys/kernel/msm_performance/parameters/cpu_max_freq" /> <!-- cpu_max_freq -->
@@ -90,6 +93,8 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x5" MinorValue="0x11" Node="/sys/devices/system/cpu/cpu0/cpufreq/walt/pl" DispMode="6" />
         <Config MajorValue="0x5" MinorValue="0x12" Node="/sys/devices/system/cpu/cpu0/cpufreq/walt/down_rate_limit_us" />
         <Config MajorValue="0x5" MinorValue="0x13" Node="/sys/devices/system/cpu/cpu0/cpufreq/walt/rtg_boost_freq" />
+        <Config MajorValue="0x5" MinorValue="0x14" Supported="no" />
+        <Config MajorValue="0x5" MinorValue="0x15" Supported="no" />
 
          <!-- CPU_LLCC_BW major old opcodes unsupported-->
         <Config MajorValue="0x6" MinorValue="0x0" Supported="no" />
@@ -148,6 +153,11 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0xB" MinorValue="0x14" Node="/sys/devices/platform/soc/1d84000.ufshc/qcom/boost_min_threshold" />
         <Config MajorValue="0xB" MinorValue="0x15" Node="/sys/devices/platform/soc/1d84000.ufshc/qcom/boost_max_threshold" />
 
+        <Config MajorValue="0xB" MinorValue="0x17" Supported="no" />
+        <Config MajorValue="0xB" MinorValue="0x19" Node="/config/platform_mpam/noc_bw/cpu_cluster0/enable_monitor" />
+        <Config MajorValue="0xB" MinorValue="0x1A" Node="/config/platform_mpam/noc_bw/gpu/enable_monitor" />
+        <Config MajorValue="0xB" MinorValue="0x1B" Node="/sys/devices/platform/soc/1d83a400.qcom,cache-allocation/enable_monitor" />
+        <Config MajorValue="0xB" MinorValue="0x1C" Node="/sys/devices/platform/soc/1d83a400.qcom,cache-allocation/bw_mon_ratio_thresh" />
         <!-- GPU -->
 
         <!-- LLCC_DDR_BW old opcodes unsupported-->
@@ -205,11 +215,16 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0xD" MinorValue="0x24" Supported="no" />
         <Config MajorValue="0xD" MinorValue="0x25" Supported="no" />
         <Config MajorValue="0xD" MinorValue="0x27" Supported="no" />
+        <Config MajorValue="0xD" MinorValue="0x2D" Supported="no" />
+        <Config MajorValue="0xD" MinorValue="0x2F" Supported="no" />
 
         <Config MajorValue="0xE" MinorValue="0x0" Supported="no" />
         <Config MajorValue="0xE" MinorValue="0x1" Supported="no" />
         <Config MajorValue="0xE" MinorValue="0x3" Supported="no" />
         <Config MajorValue="0xE" MinorValue="0x4" Supported="no" />
+
+        <Config MajorValue="0xF" MinorValue="0x7" Supported="no" />
+        <Config MajorValue="0xF" MinorValue="0x1A" Node="/proc/sys/walt/sched_util_busy_hyst_cpu_util" Supported="yes" Target="alor" />
 
         <Config MajorValue="0x11" MinorValue="0x0" Supported="yes" DispMode="7" />
         <Config MajorValue="0x11" MinorValue="0x1" Supported="yes" DispMode="7" />

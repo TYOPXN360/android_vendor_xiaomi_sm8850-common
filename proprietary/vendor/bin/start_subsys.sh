@@ -128,3 +128,4 @@ if [[ "$boot_mode_sh" != "charger" ]]; then
         echo "start" > "$cdsp_state_file"
     fi
 fi
+
