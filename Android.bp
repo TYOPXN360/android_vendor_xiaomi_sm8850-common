@@ -22996,7 +22996,7 @@ cc_prebuilt_library_shared {
                 "libwfdmminterface",
                 "libwfddisplayconfig",
                 "libmedia_helper",
-                "libaudioclient",
+                "libaudiobase",
                 "libwfdavenhancements",
                 "libhidlbase",
                 "libgralloctypes",
@@ -23141,6 +23141,7 @@ cc_prebuilt_library_shared {
                 "libaudiobase",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
+                "android.media.audio.common.types-V5-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
                 "libhidlbase",
@@ -23155,7 +23156,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     system_ext_specific: true,
 }
@@ -24085,32 +24085,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libQnnGpu",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnGpu.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-                "libEGL",
-                "libGLESv2",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQnnGpuNetRunExtensions",
     owner: "xiaomi",
     strip: {
@@ -24182,30 +24156,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libQnnHtp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtp.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQnnHtpNetRunExtensions",
     owner: "xiaomi",
     strip: {
@@ -24239,30 +24189,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/odm/lib64/libQnnHtpOptraceProfilingReader.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libQnnHtpPrepare",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtpPrepare.so",
             ],
             shared_libs: [
                 "libc",
@@ -24325,31 +24251,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libQnnHtpV68Stub",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtpV68Stub.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-                "libcdsprpc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQnnHtpV69CalculatorStub",
     owner: "xiaomi",
     strip: {
@@ -24364,31 +24265,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-                "libcdsprpc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libQnnHtpV69Stub",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtpV69Stub.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
                 "libcdsprpc",
             ],
         },
@@ -24423,31 +24299,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libQnnHtpV73Stub",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtpV73Stub.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-                "libcdsprpc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQnnHtpV75CalculatorStub",
     owner: "xiaomi",
     strip: {
@@ -24462,31 +24313,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-                "libcdsprpc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libQnnHtpV75Stub",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtpV75Stub.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
                 "libcdsprpc",
             ],
         },
@@ -24521,31 +24347,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libQnnHtpV79Stub",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtpV79Stub.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-                "libcdsprpc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQnnHtpV81CalculatorStub",
     owner: "xiaomi",
     strip: {
@@ -24560,31 +24361,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-                "libcdsprpc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libQnnHtpV81Stub",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libQnnHtpV81Stub.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
                 "libcdsprpc",
             ],
         },
@@ -25938,15 +25714,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    device_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "odm_lib_rfsa_adsp_libQnnSaver_so",
-    filename: "libQnnSaver.so",
-    owner: "xiaomi",
-    src: "proprietary/odm/lib/rfsa/adsp/libQnnSaver.so",
-    relative_install_path: "adsp",
     device_specific: true,
 }
 

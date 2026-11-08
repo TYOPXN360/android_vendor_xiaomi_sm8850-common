@@ -1353,27 +1353,18 @@ PRODUCT_PACKAGES += \
     libMiDispDevManager \
     libQnnChrometraceProfilingReader \
     libQnnCpu \
-    libQnnGpu \
     libQnnGpuNetRunExtensions \
     libQnnGpuProfilingReader \
     libQnnHta \
-    libQnnHtp \
     libQnnHtpNetRunExtensions \
     libQnnHtpOptraceProfilingReader \
-    libQnnHtpPrepare \
     libQnnHtpProfilingReader \
     libQnnHtpV68CalculatorStub \
-    libQnnHtpV68Stub \
     libQnnHtpV69CalculatorStub \
-    libQnnHtpV69Stub \
     libQnnHtpV73CalculatorStub \
-    libQnnHtpV73Stub \
     libQnnHtpV75CalculatorStub \
-    libQnnHtpV75Stub \
     libQnnHtpV79CalculatorStub \
-    libQnnHtpV79Stub \
     libQnnHtpV81CalculatorStub \
-    libQnnHtpV81Stub \
     libQnnJsonProfilingReader \
     libQnnModelDlc \
     libQnnSystem \
@@ -1416,7 +1407,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.framecapturemanager-V1-ndk \
     vendor.xiaomi.hardware.framemaster-V1-ndk \
     vendor.xiaomi.hardware.idmanager-V1-ndk \
-    odm_lib_rfsa_adsp_libQnnSaver_so \
     CACertService \
     CneApp \
     IWlanService \
