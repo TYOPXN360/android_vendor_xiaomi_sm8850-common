@@ -5819,6 +5819,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdolbyencoderprocessor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyencoderprocessor.so",
+            ],
+            shared_libs: [
+                "libdolbyeglcore",
+                "libnativewindow",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libdolbyottcameracontrol",
+                "libutils",
+                "libcutils",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdolbyottcameracontrol",
     owner: "xiaomi",
     strip: {
@@ -5836,6 +5869,73 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyproxyandroid",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyproxyandroid.so",
+            ],
+            shared_libs: [
+                "android.frameworks.sensorservice-V1-ndk",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyui",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyui.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libgralloctypes",
+                "libhidlbase",
+                "libsync",
+                "libutils",
+                "liblog",
+                "libvndksupport",
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -10797,6 +10897,88 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqcodec2_dolbyencoderfilter",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqcodec2_dolbyencoderfilter.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqcodec2_base",
+                "libqcodec2_utils",
+                "libqcodec2_basecodec",
+                "libqcodec2_filterbase",
+                "libqcodec2_platform",
+                "qti.video.utils.videobufferlayout",
+                "libnativewindow",
+                "libEGL",
+                "libGLESv3",
+                "libdolbyencoderprocessor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcodec2_dolbyenhancementfilter",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqcodec2_dolbyenhancementfilter.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqcodec2_base",
+                "libqcodec2_utils",
+                "libqcodec2_basecodec",
+                "libqcodec2_filterbase",
+                "libqcodec2_platform",
+                "qti.video.utils.videobufferlayout",
+                "libdolbydecoderprocessor",
+                "libstagefright_foundation",
+                "libnativewindow",
+                "libui",
+                "libEGL",
+                "libGLESv3",
+                "libdolbyproxyandroid",
+                "libvndksupport",
+                "libdolbyui",
+                "libmisight",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqcodec2_filterbase",
     owner: "xiaomi",
     strip: {
@@ -14003,7 +14185,7 @@ cc_prebuilt_library_shared {
                 "libsdedrm",
                 "libsdmdal",
                 "libmisight",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libc++",
                 "libc",
                 "libm",
@@ -22251,6 +22433,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.displayfeature@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/vendor.xiaomi.hardware.displayfeature@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib-imsvideocodec",
     owner: "xiaomi",
     strip: {
@@ -22371,6 +22596,34 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libdiag_system",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libSurfaceUtil_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libSurfaceUtil_jni.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libgui",
+                "libnativehelper",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -24399,6 +24652,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk_system_ext",
+    stem: "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "consumerir.qcom",
     owner: "xiaomi",
     strip: {
@@ -24973,6 +25252,30 @@ cc_prebuilt_library_shared {
                 "libtflite",
                 "libutils",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libc++_shared_odm",
+    stem: "libc++_shared",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libc++_shared.so",
+            ],
+            shared_libs: [
                 "libc",
                 "libm",
                 "libdl",
@@ -31333,6 +31636,13 @@ cc_prebuilt_binary {
     },
     prefer: true,
     device_specific: true,
+}
+
+install_symlink {
+    name: "system_ext_priv-app_ims_lib_arm64_libSurfaceUtil_jni_so",
+    system_ext_specific: true,
+    installed_location: "priv-app/ims/lib/arm64/libSurfaceUtil_jni.so",
+    symlink_target: "/system_ext/lib64/libSurfaceUtil_jni.so",
 }
 
 install_symlink {

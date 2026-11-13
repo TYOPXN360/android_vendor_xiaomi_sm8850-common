@@ -9,11 +9,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/audio/silent-3sec.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/silent-3sec.wav \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/audio/sku_canoe/adsp_sleep_monitor.conf:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_canoe/adsp_sleep_monitor.conf \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
+    vendor/xiaomi/sm8850-common/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
+    vendor/xiaomi/sm8850-common/proprietary/odm/etc/scene_temp.xml:$(TARGET_COPY_OUT_ODM)/etc/scene_temp.xml \
+    vendor/xiaomi/sm8850-common/proprietary/odm/etc/setting.xml:$(TARGET_COPY_OUT_ODM)/etc/setting.xml \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     vendor/xiaomi/sm8850-common/proprietary/odm/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b00 \
@@ -251,6 +254,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/data/nicm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/nicm_config.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU1010.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1010.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU1030.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1030.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU10__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU10__.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU11__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU11__.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU1230.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1230.xml \
@@ -258,21 +262,72 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU12__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU12__.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU1310.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1310.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU13__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU13__.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU6100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU6100.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU870.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU870.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU880.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU880.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU920.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU920.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU970.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU970.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU980.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU980.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_Sharp_qhd_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_Sharp_qhd_cmd_mode_dsi_panel.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_Sharp_qhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_Sharp_qhd_video_mode_dsi_panel.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_nt37802_video_PSR_amoled_VHM_120hz_dsi_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_nt37802_video_PSR_amoled_VHM_120hz_dsi_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/camera_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/camera_alignments.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/cpu_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/cpu_alignments.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/default_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/default_alignments.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/display_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/display_alignments.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/formats.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/formats.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/graphics_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/graphics_alignments.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/nt37801_amoled_qsync_cmd_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_qsync_cmd_mode_dsi_csot_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/nt37801_amoled_qsync_video_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_qsync_video_mode_dsi_csot_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/perf_hint_threshold.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/perf_hint_threshold.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/pipe_config_DPU11__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/pipe_config_DPU11__.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/privacy_regions_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/privacy_regions_offsets.xml \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_RaonTech_Non-FSC_mode_video_1440x1440@60_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_RaonTech_Non-FSC_mode_video_1440x1440@60_mode_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_nt37802_video_PSR_amoled_VHM_120hz_dsi_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37802_video_PSR_amoled_VHM_120hz_dsi_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_without_dsc.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_without_dsc.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/sdm_display_resolution_extn.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/display/vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630946473896859282.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946473896859282.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630946850534658451.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946850534658451.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/displayconfig/display_id_4630946916234099603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml \
@@ -738,7 +793,10 @@ PRODUCT_PACKAGES += \
     libdolbyclstc \
     libdolbydecoderprocessor \
     libdolbyeglcore \
+    libdolbyencoderprocessor \
     libdolbyottcameracontrol \
+    libdolbyproxyandroid \
+    libdolbyui \
     libdpp_manager \
     libdpps \
     libdrmfs \
@@ -905,6 +963,8 @@ PRODUCT_PACKAGES += \
     libqcodec2_core \
     libqcodec2_cvpfilter \
     libqcodec2_dolbydecoderfilter \
+    libqcodec2_dolbyencoderfilter \
+    libqcodec2_dolbyenhancementfilter \
     libqcodec2_filterbase \
     libqcodec2_hooks \
     libqcodec2_imgtxrfilter \
@@ -1297,10 +1357,12 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.radio-V1-ndk \
     vendor.xiaomi.hardware.radio.cdc-V1-ndk \
     vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
+    vendor.xiaomi.hardware.displayfeature@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libSurfaceUtil_jni \
     libc++_shared \
     libdiag_system \
     libdiagatbparser_system \
@@ -1371,6 +1433,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk_system_ext \
     consumerir.qcom \
     displayfeature.default \
     libMiDispDevManager \
@@ -1392,6 +1455,7 @@ PRODUCT_PACKAGES += \
     libQnnModelDlc \
     libadaptivehdr \
     libbarrage \
+    libc++_shared_odm \
     libclient2slpi.notifier \
     libcolortempmode \
     libcrussp \
@@ -1713,6 +1777,7 @@ PRODUCT_PACKAGES += \
     mlipayd
 
 PRODUCT_PACKAGES += \
+    system_ext_priv-app_ims_lib_arm64_libSurfaceUtil_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_etc_hal_uuid_map_pudding_xml \
