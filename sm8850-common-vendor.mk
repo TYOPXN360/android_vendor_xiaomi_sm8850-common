@@ -1439,20 +1439,46 @@ PRODUCT_PACKAGES += \
     libMiDispDevManager \
     libQnnChrometraceProfilingReader \
     libQnnCpu \
+    libQnnDsp \
+    libQnnDspNetRunExtensions \
+    libQnnDspV66CalculatorStub \
+    libQnnDspV66Stub \
+    libQnnGenAiTransformer \
+    libQnnGenAiTransformerCpuOpPkg \
+    libQnnGenAiTransformerModel \
+    libQnnGpu \
     libQnnGpuNetRunExtensions \
     libQnnGpuProfilingReader \
     libQnnHta \
+    libQnnHtaNetRunExtensions \
+    libQnnHtp \
     libQnnHtpNetRunExtensions \
     libQnnHtpOptraceProfilingReader \
+    libQnnHtpPrepare \
     libQnnHtpProfilingReader \
     libQnnHtpV68CalculatorStub \
+    libQnnHtpV68Stub \
     libQnnHtpV69CalculatorStub \
+    libQnnHtpV69Stub \
     libQnnHtpV73CalculatorStub \
+    libQnnHtpV73Stub \
     libQnnHtpV75CalculatorStub \
+    libQnnHtpV75Stub \
     libQnnHtpV79CalculatorStub \
+    libQnnHtpV79Stub \
     libQnnHtpV81CalculatorStub \
+    libQnnHtpV81Stub \
+    libQnnIr \
     libQnnJsonProfilingReader \
+    libQnnLpai \
+    libQnnLpaiNetRunExtensions \
+    libQnnLpaiV79Stub \
     libQnnModelDlc \
+    libQnnNetRunDirectV79Stub \
+    libQnnNetRunDirectV81Stub \
+    libQnnSaver \
+    libQnnSystem \
+    libQnnTFLiteDelegate \
     libadaptivehdr \
     libbarrage \
     libc++_shared_odm \
