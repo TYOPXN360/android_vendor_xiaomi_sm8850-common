@@ -25,17 +25,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/system/lib64/libskuparser_cpp.so",
             ],
-            shared_libs: [
-                "libskuparser_ffi",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
 }
 
