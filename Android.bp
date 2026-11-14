@@ -32,26 +32,6 @@ cc_prebuilt_library_shared {
     prefer: true,
 }
 
-rust_prebuilt_dylib {
-    name: "libxml_rust",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libxml_rust.dylib.so",
-            ],
-            shared_libs: [
-                "libc",
-            ],
-            rustlibs: [
-                "libstd",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
 cc_prebuilt_library_shared {
     name: "libxqos",
     owner: "xiaomi",

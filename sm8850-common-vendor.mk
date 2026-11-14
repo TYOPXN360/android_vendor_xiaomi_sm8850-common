@@ -112,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/system/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteserver.xml \
     vendor/xiaomi/sm8850-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/sm8850-common/proprietary/system/lib64/libskuparser_ffi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libskuparser_ffi.so \
+    vendor/xiaomi/sm8850-common/proprietary/system/lib64/libxml_rust.dylib.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxml_rust.dylib.so \
     vendor/xiaomi/sm8850-common/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
     vendor/xiaomi/sm8850-common/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
@@ -606,7 +607,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libskuparser_cpp \
-    libxml_rust \
     libxqos \
     btaudio_offload_if \
     cellularSecurityModule \
