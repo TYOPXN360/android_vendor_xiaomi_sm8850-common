@@ -28687,6 +28687,24 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.framecapturemanager_aidl-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.framecapturemanager_aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.framemaster_aidl-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.framemaster_aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.xiaomi.hardware.postprocservice-service.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.postprocservice-service.xml",

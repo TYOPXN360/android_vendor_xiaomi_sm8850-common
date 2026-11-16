@@ -1673,6 +1673,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.aidl.intentaware-service.xml \
     vendor.xiaomi.hardware.aidlbgservice-service.xml \
     vendor.xiaomi.hardware.camera.mivimessage-service.xml \
+    vendor.xiaomi.hardware.framecapturemanager_aidl-service.xml \
+    vendor.xiaomi.hardware.framemaster_aidl-service.xml \
     vendor.xiaomi.hardware.postprocservice-service.xml \
     vendor.xiaomi.hw.touchfeature-service.xml \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
